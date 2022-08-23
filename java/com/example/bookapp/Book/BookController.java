@@ -9,7 +9,6 @@ import java.util.List;
 @RequestMapping("/book")
 public class BookController {
 
-//    don't know if it is Impl of normal
     @Autowired
     private BookService bookService;
 

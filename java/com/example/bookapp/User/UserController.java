@@ -28,7 +28,6 @@ public class UserController {
     public User getUserByUserId(@RequestBody User user){return userService.getUserByUserId(user.getUserId());}
 
 //    We are passing JSON object for the email and the password, so we need to pass it as a String
-//@CrossOrigin
     @PostMapping("/user/login")
     public User getUser(@RequestBody User user) throws UserNotFoundException {
         System.out.println( "\n\n\n\n\n\n\n\n\n\n" + user.getEmail() + user.getPassword());
